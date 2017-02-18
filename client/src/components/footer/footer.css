@@ -1,0 +1,8 @@
+footer {
+    display: block
+}
+footer li {
+    display: inline;
+    margin-right: 20px;
+    font-weight: 600;
+}

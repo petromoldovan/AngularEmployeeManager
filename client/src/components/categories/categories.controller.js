@@ -2,9 +2,7 @@ class CategoriesController {
     constructor(CategoriesModel, ApiModel) {
 
       this.CategoriesModel = CategoriesModel
-        this.ApiModel = ApiModel
-
-
+      this.ApiModel = ApiModel
     }
 
     $onInit() {
@@ -18,7 +16,12 @@ class CategoriesController {
     }
 
     onCategorySelected(category) {
+        this.CategoriesModel.setCurrentCategory(category)
         console.log(category)
+    }
+
+    isCurrentCategory(category) {
+        return this.CategoriesModel.getCurrentCategory() && this.CategoriesModel.getCurrentCategory().id === category.id
     }
 }
 

@@ -1,3 +1,7 @@
 .app {
     color: red
 }
+.main {
+    display: inline-block;
+    width: 100%;
+}
