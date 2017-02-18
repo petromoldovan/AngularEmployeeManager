@@ -5,10 +5,12 @@ class BookmarksModel {
         this.$q = $q;
 
         this.bookmarks = [
-            {"id": 1, "title": "this is title 1", "url": "some url", "category": "Development"},
-            {"id": 2, "title": "this is title 1", "url": "some url", "category": "Design"},
-            {"id": 3, "title": "this is title 1", "url": "some url", "category": "Exercise"},
-            {"id": 4, "title": "this is title 1", "url": "some url", "category": "Humor"}
+            {"id": 1, "title": "category: Development lorem ipsum", "url": "some url", "category": "Development"},
+            {"id": 2, "title": "category: Design lorem ipsum", "category": "Design"},
+            {"id": 3, "title": "category: Exercise lorem ipsum", "category": "Exercise"},
+            {"id": 4, "title": "category: Humor lorem ipsum", "category": "Humor"},
+            {"id": 5, "title": "category: Design lorem ipsum", "category": "Design"},
+            {"id": 6, "title": "category: Exercise lorem ipsum", "category": "Exercise"},
         ]
     }
 
