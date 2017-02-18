@@ -1,9 +1,24 @@
 class CategoriesController {
-    constructor(CategoriesModel) {
+    constructor(CategoriesModel, ApiModel) {
 
-      //service to fetch categories
-      CategoriesModel.getCategories()
-        .then(res => this.categories = res)
+      this.CategoriesModel = CategoriesModel
+        this.ApiModel = ApiModel
+
+
+    }
+
+    $onInit() {
+        //service to fetch categories
+        this.CategoriesModel.getCategories()
+            .then(res => this.categories = res)
+
+        //ajax data fetch
+        this.ApiModel.fetchData()
+            .then(res => console.log(res))
+    }
+
+    onCategorySelected(category) {
+        console.log(category)
     }
 }
 

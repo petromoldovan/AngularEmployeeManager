@@ -9,6 +9,5 @@ import CommonModule from './common/common';
 
 angular.module('app', [
         CommonModule.name,
-        ComponentsModule.name
-])
+        ComponentsModule.name])
     .component('app', appComponent);

@@ -1,5 +1,7 @@
 <div>
    <ul>
-       <li ng-repeat="category in categoriesListCtrl.categories">{{category.name}}</li>
+       <li ng-repeat="category in categoriesListCtrl.categories">
+           <category-item selected="categoriesListCtrl.onCategorySelected(category)" category="category"></category-item>
+       </li>
    </ul>
 </div>
